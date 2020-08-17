@@ -1,0 +1,390 @@
+body {
+  background: #000;
+	margin-left: auto;
+	margin-right: auto;
+  font-family: 'Rowdies', cursive;
+
+
+}
+
+body .container-fluid {
+	width: 100%;
+	height: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+body .container-fluid:first-child {
+	max-width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+
+}
+
+.row
+{
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body .container-fluid .bg:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/sky.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  max-width: calc(100vw - (100vw - 100%));
+}
+
+.gb
+{
+	max-width: calc(100vw - (100vw - 100%));
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bigTree.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+
+#name
+{
+	color: white;
+	font-size: 30px;
+	text-align: right;
+	margin-top: 85vh;
+}
+
+#portfolio
+{
+	width: 100%;
+	height: auto;
+	margin-top: 2vh;
+}
+
+#technologie
+{
+	width: 100%;
+	height: auto;
+	margin-top: 3vh;
+}
+
+.text
+{
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+ 
+  margin-top: 20vh;
+}
+
+#timer
+{
+	font-size: 22px;
+	font-weight: 300;
+	text-align: left;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+
+	margin-top: 2vh;
+}
+
+#face
+{
+	width: 100%;
+	height: auto;
+
+	margin: 5vw;
+	margin-top: 20vh;
+}
+
+#omnie
+{
+	width: 100%;
+	height: auto;
+
+	margin-top: 6vh; 
+}
+
+#hej
+{
+	width: 100%;
+	height: auto;
+
+	margin-top: 6vh; 
+}
+
+#projekty
+{
+	width: 100%;
+	height: auto;
+
+	margin-top: 5vh; 
+	margin-bottom: 3vh;
+}
+
+#union4
+{
+	right: 0vw;
+	bottom: -120vh;
+
+	position: absolute;
+}
+
+#union6
+{
+	right: 0vw;
+	bottom: -116vh;
+
+	position: absolute;
+}
+
+#union8
+{
+	right: 4vw;
+	bottom: -196vh;
+
+	position: absolute;
+}
+
+#union7
+{
+	right: 1.5vw;
+	bottom: -243.5vh;
+
+	position: absolute;
+}
+
+#union8-2
+{
+	left: 3vw;
+	bottom: -295vh;
+
+	position: absolute;
+}
+
+
+#union9
+{
+	right: 1.5vw;
+	bottom: -390vh;
+	position: absolute;
+}
+
+.game
+{
+  width: 400px;
+  display: block;
+  text-decoration: none;
+  color: #1efc8d;
+  margin-top: 8vh;
+  transition: all.9s ease-in-out;
+  opacity: 0.8;
+}
+
+.game:hover
+{
+
+  opacity: 1;
+
+}
+
+.gameImg
+{
+  border: 1px solid #FFF;
+
+}
+
+#git
+{
+  width: 260px;
+  height: 191px;
+  border: 1px solid #FFF;
+  text-align: center;
+  transition: all.9s ease-in-out;
+  opacity: 0.8;
+}
+#git:hover
+{
+
+  opacity: 1;  
+}
+
+footer
+{
+	font-size: 8px;
+	color:#111;
+	background-color: #AAA;
+	display: table-cell;
+	vertical-align: middle;
+	height: 6vh;
+	width: 100vw;
+	text-align: center;
+}
+
+input[type=submit]
+{
+  width: 400px;
+  background-color: #FFF;
+  font-size: 22px;
+  color: #000;
+  padding: 15px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+a
+{
+	padding-top: 5vh;
+  cursor:pointer; 
+  color: #FFF; 
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:hover
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=password]
+{
+  width: 400px;
+  background-color: #000;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  padding: 15px 15px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(300, 300, 300, 0.9);
+  -moz-box-shadow:0px 0px 10px 2px rgba(300, 300, 300, 0.9);
+  box-shadow: 0px 0px 10px 2px rgba(300, 300, 300, 0.9);
+  background-color: #222222;
+}
+
+.error
+{	
+	padding: 1vw;
+
+  color: red;
+  font-size: 16px;
+}
+
+
+@media (min-width: 1200px)
+{
+	#mobile
+	{
+		display: none;
+	}
+
+	#name
+	{
+		margin-top: 75vh;
+	}
+
+	footer
+	{
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 1200px)
+{
+	#face
+	{
+		margin: 0;
+		margin-top: 10vw;
+		width: 70%;
+		margin-left: 5vw;
+	}
+	.text
+	{
+		margin: 5vw;
+
+	}
+	#name
+	{
+		font-size: 18px;
+	}
+
+	#union4
+	{
+		display: none;
+	}
+
+	#union6
+	{
+		display: none;
+	}
+
+	#union8
+	{
+		display: none;
+	}
+
+	#union8-2
+	{
+		display: none;
+	}
+
+	#union7
+	{
+		display: none;
+	}
+
+	.desktop
+	{
+		display: none;
+	}
+
+	.text
+	{
+		font-size: 16px;
+	}
+
+	#technologie
+	{
+		display: none;
+	}
+}
+
+
+@media(max-width: 767px)
+{
+	.text
+	{
+		font-size: 13px;
+	}
+}
