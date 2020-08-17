@@ -1,0 +1,176 @@
+body
+{
+	margin: 0;
+	background-color: #26282E;
+	color: #209781;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    margin: 0 !important;
+    margin-left: auto;
+	margin-right:auto;
+}
+
+a:link    { color: #209781; text-decoration: none; }
+a:visited { color: #209781; }
+a:active  { color: #209781; }
+a:hover   { color: #E9B64A; }
+
+
+
+#container
+{
+	margin-left: auto;
+	margin-right:auto;
+	width: 1300px;
+	text-align: center;
+	border: 3px solid #848583;
+}
+
+#logo
+{
+
+	font-size: 62px;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border: 3px solid #848583;
+
+}
+
+#gameBox
+{
+	margin: 20px;
+	width: 960px;
+	height: 600px;
+	float: left;
+	padding: 10px;
+	font-size: 36px;
+}
+
+#canvas
+{
+	border: 3px dotted #848583;
+	background-color: black;	
+}
+
+#gameLegend
+{
+	float: left;
+	width: 200px;
+	height: 600px;
+	padding: 10px;
+	border: 3px solid #848583;
+	margin:20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+#levelCounter
+{
+
+}
+
+#backButton
+{
+	background-image: url("../backGood.png");
+	background-repeat: no-repeat;
+	width: 63px;
+	height: 63px;
+}
+
+#pretime
+{
+
+	height: 17px;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: right;
+	letter-spacing: 0px;
+	color: #FFFFFF;	
+}
+
+#time
+{
+
+	height: 17px;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: right;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+
+}
+
+
+footer
+{
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	bottom: 0px;
+}
+
+input[type=submit]
+{
+	width: 150px;
+	background-color: #51C8B2;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+table.scroll {
+    width: 200px; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+    border: 2px solid black;
+    font-size: 14px;
+    background-color: #555;
+}
+
+table.scroll tbody,
+table.scroll thead tr { display: block; }
+
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table.scroll tbody td,
+table.scroll thead th {
+    width: 140px;
+    border-right: 1px solid black;
+}
+
+table.scroll thead th:last-child {
+    width: 115px; /* 140px + 16px scrollbar width */
+}
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    /*text-align: left;*/
+}
+
+tbody { 
+	border-top: 2px solid black; 
+
+}
+
+td:last-child{ 
+	width: 124px;
+
+}
+
+tbody td:last-child, thead th:last-child {
+    border-right: none !important;
+}
