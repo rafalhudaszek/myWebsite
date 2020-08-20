@@ -24,38 +24,7 @@
     <link rel="stylesheet" href="css/sty.css">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet"> 
 	<script type="text/javascript" src="jQuery.js"></script>
-	<script>
-		var xmlhttp = new XMLHttpRequest();
-		onmousedown = function()
-		{
-			xmlhttp.open("GET", "changeTimer.php", false);
-			xmlhttp.send(null);
-			xmlhttp.responseText;
-		}
-
-		onkeydown = function()
-		{
-			xmlhttp.open("GET", "changeTimer.php", false);
-			xmlhttp.send(null);
-			xmlhttp.responseText;
-		}
-
-		$(document).ready(function()
-		{
-			$("#hej").get(0).scrollIntoView();
-		});
-
-		setInterval(function()
-			{
-				xmlhttp.open("GET", "timer.php", false);
-				xmlhttp.send(null);
-				if(xmlhttp.responseText == "logout")
-				{
-					window.location.href = 'clear.php';
-				}
-				document.getElementById("timer").innerHTML = xmlhttp.responseText;
-			}, 1000);
-	</script>
+	<script type="text/javascript" src="timer.js"></script>
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
@@ -140,7 +109,7 @@
     			<div id="mobile">
 					<div class="text">
 						<span style="font-weight: 700">Hej!</span><br>
-						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstopową mojej strony!
+						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstop mojej strony!
 						<br><br>
 						Zapraszam Cię także na mojego githuba gdzie możesz przejrzęć część z moich poprzednich projektów. <br>
 						<a href="https://github.com/rafalhudaszek">

@@ -19,25 +19,22 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/sty.css">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type="text/javascript" src="jQuery.js"></script>
 	<script>
 		$(document).ready(function()
 		{
 			$("#hej").get(0).scrollIntoView();
-			$('#rejInput').click(function()
+			$('#zalInput').click(function()
 			{
-				//unset($_SESSION['e_nick']);
+				//unset($_SESSION['blad']);
 				$.ajax(
 				{
 					type: "POST",
-					url: "rej.php",
+					url: "zal.php",
 					data:
 					{
-						nick: $("#rejNick").val(),
-						email: $("rejEmail").val(),
-						haslo1: $("rejHaslo1").val(),
-						haslo2: $("rejHaslo2").val(),
+						login: $("#logNick").val(),
+						haslo: $("logHaslo").val(),
 					}
 				});
 				window.location.replace('index.php');
@@ -50,24 +47,23 @@
 </head>
 <body>
 <main>
-	<header>
-		<section class="front">
-		    <div class="container-fluid">
-		        <div class="bg"></div>
-		        <div class="gb"></div>
-	        	<div class="row">
-	        		<div class="col-7 offset-5 col-xl-3 offset-xl-8">
-	        			<div id="name">Rafał Hudaszek</div>
-	        		</div>
-	        	</div>
-	        	<div class="row">
-	        		<div class="col-11 offset-1 col-xl-6 offset-xl-5">
-	        			<img src="img/portfolio.png" id="portfolio">
-	        		</div>
-	        	</div>
-		    </div>
-		</section>
-	</header>
+	<section class="front">
+	    <div class="container-fluid">
+	        <div class="bg"></div>
+	        <div class="gb"></div>
+        	<div class="row">
+        		<div class="col-7 offset-5 col-xl-3 offset-xl-8">
+        			<div id="name">Rafał Hudaszek</div>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-11 offset-1 col-xl-6 offset-xl-5">
+        			<img src="img/portfolio.png" id="portfolio">
+        		</div>
+        	</div>
+	    </div>
+	</section>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-xl-3">
@@ -78,7 +74,7 @@
 					<span style="font-weight: 700;">Witam.</span><br>
 					Jestem Rafał, student państwowej
 					uczelni AGH.
-					  Z aspiracji, specjalista od tworzenia oraz działania aplikacji, z zainteresowań fizyk teoretyk.
+					Z aspiracji, specjalista od tworzenia oraz działania aplikacji, z zainteresowań fizyk teoretyk.
 				</div>
 			</div>
 
@@ -105,6 +101,7 @@
         <img src="img/Union 4.png" id="union4">
     </div>
 
+
     <div class="container-fluid">
     	<div class="row">
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
@@ -116,7 +113,7 @@
     		</div>
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
     			<div class="text">
-					Front-end, back-end, testing, security, data science. Jestem głodny wiedzy i podejmę się każdej pracy na stanowisku juniorskim.<br><br> Szybko się uczę, jestem zdeterminowany i gotowy do działania. Jako osoba ekstrawertyczna, idealnie pasuje do pracy z zespołem.
+					Front-end, back-end, testing, security, data science. Jestem głodny wiedzy i podejmę się każdej pracy na stanowisku juniorskim.<br><br>Szybko się uczę, jestem zdeterminowany i gotowy do działania. Jako osoba ekstrawertyczna, idealnie pasuje do pracy z zespołem.
 				</div>
     		</div>
     	</div>
@@ -126,7 +123,7 @@
     			<div id="mobile">
 					<div class="text">
 						<span style="font-weight: 700">Hej!</span><br>
-						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstopową mojej strony!
+						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstop mojej strony!
 						<br><br>
 						Zapraszam Cię także na mojego githuba gdzie możesz przejrzęć część z moich poprzednich projektów. <br>
 						<a href="https://github.com/rafalhudaszek">
@@ -170,57 +167,20 @@
 	    			</div>
 	    		</div>
 	    		<div class="offset-xl-2 col-xl-3">
-	    			<form action="rej.php" method="post">	
-						<input id="rejNick" type="text" name="nick" placeholder="login" style="margin-top: 10vh;" />
-						<?php
-						if(isset($_SESSION['e_nick']))
-						{
+	    			<form method="post" action="zal.php">
+						<input id="logNick" type="text" name="login" placeholder="login" style="margin-top: 15vh;">
 
-							echo '<div class="error" style="padding: 0.25vw;padding-left:1vw;">'.$_SESSION['e_nick'].'</div>';
-							//unset($_SESSION['e_nick']);
-						}
-						else
-						{
-							echo '<div class="error" style="padding: 0.8vw;padding-left:1vw;"></div>';
-						}
-						?>
-
-						<input id="rejEmail" type="text" name="email"  placeholder="email"/>
-						<?php
-						if(isset($_SESSION['e_email']))
-						{
-
-							echo '<div class="error" style="padding: 0.25vw;padding-left:1vw;">'.$_SESSION['e_email'].'</div>';
-							//unset($_SESSION['e_nick']);
-						}
-						else
-						{
-							echo '<div class="error" style="padding: 0.8vw;padding-left:1vw;"></div>';
-						}
-						?>
-
-						<input id="rejHaslo1" type="password" name="haslo1" placeholder="haslo"/>
-						<?php
-						if(isset($_SESSION['e_haslo']))
-						{
-
-							echo '<div class="error" style="padding: 0.25vw;padding-left:1vw;">'.$_SESSION['e_haslo'].'</div>';
-							//unset($_SESSION['e_nick']);
-						}
-						else
-						{
-							echo '<div class="error"style="padding: 0.8vw;padding-left:1vw;"></div>';
-						}
-						?>
-
-
-
-						<input id="rejHaslo2" type="password" name="haslo2"  placeholder="powtórz haslo"/>
-
-						
-
-						<input id="rejInput" type="submit" value="Zarejestruj się" style="margin-top:4vh; margin-bottom:2vh;"/><br>
-						<a href="logowanie">Masz już konto?</a>
+						<input id="logHaslo" type="password" name="haslo" placeholder="haslo" style="margin-top: 4vh;"/>
+						<input id="zalInput" type="submit" value="Zaloguj sie" style="margin-top: 4vh; margin-bottom:2vh;"/><br>
+						<a href="rejestracja">Nie masz konta?</a>
+						<div class="error">
+							<?php
+								if(isset($_SESSION['blad']))
+								{
+									echo $_SESSION['blad'];
+								}
+							?>
+						</div>
 					</form>
 	    		</div>
 	    	</div>

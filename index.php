@@ -101,7 +101,7 @@
     			<div id="mobile">
 					<div class="text">
 						<span style="font-weight: 700">Hej!</span><br>
-						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstopową mojej strony!
+						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstop mojej strony!
 						<br><br>
 						Zapraszam Cię także na mojego githuba gdzie możesz przejrzęć część z moich poprzednich projektów. <br>
 						<a href="https://github.com/rafalhudaszek">
