@@ -23,10 +23,6 @@
 	<script>
 		$(document).ready(function()
 		{
-			/*
-			$("html").css("scroll-behavior", 'auto');
-			location.href = "#pageThree";
-			$("html").css("scroll-behavior", 'smooth');*/
 			$("#hej").get(0).scrollIntoView();
 			$('#zalInput').click(function()
 			{
@@ -76,9 +72,9 @@
             <div class="col-12 col-sm-6 col-xl-3 offset-xl-1">
 				<div class="text">
 					<span style="font-weight: 700;">Witam.</span><br>
-					Jestem Rafał, libertarian oraz student państwowej
+					Jestem Rafał, student państwowej
 					uczelni AGH.
-					  Z aspiracji, specjalista od tworzenia oraz działania aplikacji, z zainteresowań fizyk teoretyk.
+					Z aspiracji, specjalista od tworzenia oraz działania aplikacji, z zainteresowań fizyk teoretyk.
 				</div>
 			</div>
 
@@ -267,6 +263,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	
 	<script src="js/bootstrap.min.js"></script>
-	<script src="jQuery.js"></script>
 </body>
 </html>
