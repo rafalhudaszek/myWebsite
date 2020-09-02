@@ -93,7 +93,7 @@
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
     			<div class="text">
 				<spam style ="font-weight: 700;">Języki w których się rozwijam: </spam><br>-Java 8 <br>-Python 3 <br>-SQL<br>-PHP <br><br>
-					<spam style ="font-weight: 700;">Bibloteki:</spam> <br>-jQuery <br>-bootstrap <br>-PDO <br><br><spam style ="font-weight: 700;">FrameWork:</spam> <br>-Spring <br>-Symfony<spam style ="font-weight: 700;">Wzorce archtektoniczne:</spam><br>-MVC
+					<spam style ="font-weight: 700;">Bibloteki:</spam> <br>-jQuery <br>-bootstrap <br>-PDO <br><br><spam style ="font-weight: 700;">FrameWork:</spam> <br>-Spring <br>-Symfony<br><br><spam style ="font-weight: 700;">Wzorce archtektoniczne:</spam><br>-MVC
 				</div>
     		</div>
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
