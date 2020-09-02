@@ -92,9 +92,8 @@
     	<div class="row">
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
     			<div class="text">
-					<spam style ="font-weight: 700;">Języki w których mam <br>doświadczenie:</spam><br>-Fortran<br>-C<br>-C++14<br>-CSS <br> -HTML <br> <br> 
-					<spam style ="font-weight: 700;">Języki w których się rozwijam: </spam><br>-Java 8 <br>-Python 3 <br>-SQL<br>-PHP <br><br>
-					<spam style ="font-weight: 700;">Bibloteki:</spam> <br>-jQuery <br>-PDO <br>-bootstrap <br><br><spam style ="font-weight: 700;">FrameWork:</spam> <br>-Spring <br>-Symfony
+				<spam style ="font-weight: 700;">Języki w których się rozwijam: </spam><br>-Java 8 <br>-Python 3 <br>-SQL<br>-PHP <br><br>
+					<spam style ="font-weight: 700;">Bibloteki:</spam> <br>-jQuery <br>-bootstrap <br>-PDO <br><br><spam style ="font-weight: 700;">FrameWork:</spam> <br>-Spring <br>-Symfony<spam style ="font-weight: 700;">Wzorce archtektoniczne:</spam><br>-MVC
 				</div>
     		</div>
     		<div class="offset-xl-1 col-xl-3 col-sm-6 col-12">
@@ -112,7 +111,7 @@
 						Jeśli chcesz zagrać w moje gry i zapisać się w tabeli wyników, zapraszam Cię na wersje dekstop mojej strony!
 						<br><br>
 						Zapraszam Cię także na mojego githuba gdzie możesz przejrzęć część z moich poprzednich projektów. <br>
-						<a href="https://github.com/rafalhudaszek">
+						<a href="http://github.com/rafalhudaszek">
 							<span style="font-weight: 700;">
 								github.com/rafalhudaszek
 							</span>
@@ -207,7 +206,7 @@
 	    	<div class="row">
 	    		<div class="offset-xl-1 col-xl-3">
 	    			<div class="game">
-						<a href="https://github.com/rafalhudaszek">
+						<a href="http://github.com/rafalhudaszek">
 							<div id="git">
 								<img src="img/gitL.png" style="margin-top: 30px;" >
 							</div>	
@@ -218,7 +217,7 @@
 					<div class="text" style="margin-top:7.1vh;">
 						Jesteś ciekaw moich prac? Na githubie umieściłem kod części z moich wcześniejszych projektów
 					</div>
-					<a href="https://github.com/rafalhudaszek">
+					<a href="http://github.com/rafalhudaszek">
 						<input  type="submit"  name="github" value="Wejdź!" style="margin-top: 4vh; margin-right:12vw; width: 265px;"/>	
 					</a>
 				</div>
